@@ -4,8 +4,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
+  //   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
   color: $light;
 }
 
@@ -15,18 +16,119 @@ a {
 }
 
 * {
+  font-family: "Bodoni Moda", sans-serif;
   box-sizing: border-box;
 }
 
 header {
-  background: url("../../public/images/bg1.jpg");
+  background: url("../../public/images/bg1.jpg"), rgba(0, 0, 0, 0.4);
   background-size: cover;
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   nav {
-    background: $light;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 1rem;
+
+    a {
+      letter-spacing: 0.15rem;
+      font-weight: bold;
+    }
+    .btn {
+      border: 2px solid $primary;
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .social-icons {
+      position: fixed;
+      // width: 50%;
+      top: 70%;
+      // left: 5%;
+      padding-left: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      // background: red;
+      i {
+        padding: 0.3rem;
+        background: $secondary;
+        color: $light;
+        // border-radius: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    // background: red;
+    .inner {
+      // background: yellow;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .name {
+        // background: green;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          // height: 100vh;
+          background: -webkit-linear-gradient(
+            $primary,
+            $secondary,
+            $light,
+            $secondary,
+            $light
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          text-align: center;
+          margin: 0;
+          writing-mode: vertical-lr;
+          text-orientation: upright;
+          font-size: 3rem;
+          font-weight: 900;
+          @media screen and (max-width: 768px) {
+            font-size: 2rem;
+          }
+        }
+        .joy {
+          border-left: 2px solid $light;
+        }
+        .simdi {
+          border-right: 2px solid $light;
+        }
+      }
+      .title {
+        h4 {
+          font-size: 1.5rem;
+          letter-spacing: 0.2rem;
+          font-weight: bold;
+          @media screen and (max-width: 768px) {
+            letter-spacing: 0.1rem;
+            font-size: 1.2rem;
+          }
+        }
+        // .
+      }
+      .arrow-down {
+        text-align: center;
+        // background: red;
+        // svg {
+        //   // font-size: 3rem;
+        //   // background: $light !important;
+        // }
+      }
+    }
   }
 }
 main {
