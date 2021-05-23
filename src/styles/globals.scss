@@ -1,9 +1,12 @@
+@import "./variables";
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $light;
 }
 
 a {
@@ -21,6 +24,10 @@ header {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+
+  nav {
+    // background: $light;
+  }
 }
 main {
   height: 100vh;

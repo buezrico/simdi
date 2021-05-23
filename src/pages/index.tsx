@@ -9,7 +9,14 @@ export default function Home() {
         <link rel="icon" href="/images/logo.ico" />
       </Head>
 
-      <header></header>
+      <header>
+        <nav className="navbar">
+          <div className="container">
+            <a className="navbar-brand text-secondary">SIMDI</a>
+          </div>
+        </nav>
+      </header>
+
       <main></main>
     </div>
   );
