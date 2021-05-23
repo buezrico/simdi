@@ -36,7 +36,7 @@ export default function Home() {
               <p className="simdi">SIMDI</p>
             </div>
 
-            <div className="title text-center text-light">
+            <div className="title text-center text-light mb-3">
               <h4>Nigerian Supermodel &amp; Enterpreneur</h4>
             </div>
             <div className="arrow-down">
