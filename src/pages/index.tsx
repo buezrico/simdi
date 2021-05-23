@@ -10,11 +10,23 @@ export default function Home() {
       </Head>
 
       <header>
-        <nav className="navbar">
+        <nav className="navbar text-primary">
           <div className="container">
-            <a className="navbar-brand text-secondary">SIMDI</a>
+            <a className="navbar-brand">SIMDI</a>
+
+            <button className="btn rounded-circle btn-outline-primary py-1">
+              <i className="fas fa-bars"></i>
+            </button>
+
+            <button className="btn rounded-0 btn-outline-primary">
+              Book Me
+            </button>
           </div>
         </nav>
+
+        <div className="content">
+          <div className="container inner"></div>
+        </div>
       </header>
 
       <main></main>
