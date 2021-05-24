@@ -3,3 +3,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap");
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  nav {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+
+    box-shadow: 1rem;
+
+    .social-icons {
+      align-items: center;
+      i {
+        color: $primary;
+        margin-right: 1rem;
+      }
+    }
+
+    .btn {
+      // border: 2px solid $primary;
+      // font-weight: bold;
+      i {
+        color: inherit;
+      }
+    }
+  }
+}

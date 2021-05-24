@@ -1,5 +1,5 @@
 import Head from "next/head";
-import AboutPage from "./about";
+import NavbarComp from "../components/NavbarComp";
 
 export default function Home() {
   return (
@@ -11,26 +11,7 @@ export default function Home() {
       </Head>
 
       <header>
-        <nav className="navbar text-primary">
-          <div className="container">
-            <a className="navbar-brand">SIMDI</a>
-
-            <button className="btn rounded-circle btn-outline-primary py-1">
-              <i className="fas fa-bars"></i>
-            </button>
-
-            <button className="btn rounded-0 btn-outline-primary">
-              Book Me
-            </button>
-          </div>
-        </nav>
-
         <div className="content">
-          <div className="social-icons">
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-          </div>
           <div className="container inner">
             <div className="name mb-4">
               <p className="joy styled-text">JOY</p>

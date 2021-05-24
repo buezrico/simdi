@@ -36,7 +36,15 @@ a {
 }
 
 header {
-  background: url("../../public/images/bg2.jpg"), rgba(0, 0, 0, 0.4);
+  background: url("../../public/images/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  // background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   @media screen and (max-width: 768px) {
     background: url("../../public/images/mobile-bg.jpg");
     background-position: center;
@@ -44,56 +52,11 @@ header {
     // background-attachment: fixed;
     // background: red;
   }
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  // background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  nav {
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: 1rem;
-
-    a {
-      letter-spacing: 0.15rem;
-      font-weight: bold;
-    }
-    .btn {
-      // border: 2px solid $primary;
-      // font-weight: bold;
-      i {
-        color: inherit;
-      }
-    }
-  }
-
   .content {
-    flex: 1;
     display: flex;
     align-items: center;
     position: relative;
 
-    .social-icons {
-      position: fixed;
-      // width: 50%;
-      top: 70%;
-      // left: 5%;
-      padding-left: 0.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      // background: red;
-      i {
-        padding: 0.3rem;
-        background: $secondary;
-        color: $light;
-        // border-radius: 1rem;
-        margin-bottom: 1rem;
-      }
-    }
     // background: red;
     .inner {
       // background: yellow;
@@ -216,6 +179,55 @@ header {
   }
 }
 
-.section {
-  height: 100vh;
+* {
+  box-sizing: border-box;
+}
+
+$max-img-width: 600px;
+$max-img-height: 400px;
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.gallery {
+  display: flex;
+  margin: 10px auto;
+  max-width: $max-img-width;
+  position: relative;
+  padding-top: $max-img-height/$max-img-width * 100%;
+
+  @media screen and (min-width: $max-img-width) {
+    padding-top: $max-img-height;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__thumb {
+    padding-top: 6px;
+    margin: 6px;
+    display: block;
+  }
+
+  &__selector {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked {
+      + .gallery__img {
+        opacity: 1;
+      }
+      ~ .gallery__thumb > img {
+        box-shadow: 0 0 0 3px #0be2f6;
+      }
+    }
+  }
 }

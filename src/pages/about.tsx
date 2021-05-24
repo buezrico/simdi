@@ -1,6 +1,14 @@
+import Head from "next/head";
+import React from "react";
+import NavbarComp from "../components/NavbarComp";
+
 const AboutPage = () => {
   return (
     <div>
+      <Head>
+        <title>About Me</title>
+        <link rel="icon" href="/images/logo.ico" />
+      </Head>
       <main className="about">
         <div className="inner">
           <div className="container">
