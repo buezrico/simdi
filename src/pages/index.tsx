@@ -32,8 +32,8 @@ export default function Home() {
           </div>
           <div className="container inner">
             <div className="name mb-4">
-              <p className="joy">JOY</p>
-              <p className="simdi">SIMDI</p>
+              <p className="joy styled-text">JOY</p>
+              <p className="simdi styled-text">SIMDI</p>
             </div>
 
             <div className="title text-center text-light mb-3">
@@ -55,7 +55,29 @@ export default function Home() {
         </div>
       </header>
 
-      <main></main>
+      <main className="about">
+        <div className="inner">
+          <div className="container">
+            <div className="about-text">
+              <div className="about-title">
+                <h4 className="mb-4 styled-text">About Me</h4>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+                eaque autem similique eveniet magni? Amet alias illo ipsum illum
+                rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Praesentium, magni placeat atque sed non quasi, unde quod
+                reiciendis, deleniti architecto vel mollitia libero ex. Porro
+                earum inventore et asperiores unde fugiat, doloremque quisquam
+                laudantium voluptas, voluptate nisi tenetur ea! Suscipit!
+              </p>
+            </div>
+            {/* <div className="about-pic"></div> */}
+          </div>
+        </div>
+      </main>
+
+      <section className="section"></section>
     </div>
   );
 }
