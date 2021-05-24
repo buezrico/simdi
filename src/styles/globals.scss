@@ -42,6 +42,7 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    // background: red;
   }
   background-size: cover;
   background-position: center;
@@ -60,8 +61,11 @@ header {
       font-weight: bold;
     }
     .btn {
-      border: 2px solid $primary;
-      font-weight: bold;
+      // border: 2px solid $primary;
+      // font-weight: bold;
+      i {
+        color: inherit;
+      }
     }
   }
 
@@ -156,7 +160,7 @@ header {
   // padding: 2rem 0;
 
   .inner {
-    height: 90%;
+    // height: 100%;
     width: 100%;
     // background: yellow;
     background: url("../../public/images/bg1.jpg");
