@@ -1,5 +1,8 @@
 import Head from "next/head";
+import React from "react";
 import NavbarComp from "../components/NavbarComp";
+import AboutPage from "../components/AboutComp";
+import GalleryComp from "../components/GalleryComp";
 
 export default function Home() {
   return (
@@ -11,6 +14,8 @@ export default function Home() {
       </Head>
 
       <header>
+        <NavbarComp />
+
         <div className="content">
           <div className="container inner">
             <div className="name mb-4">
@@ -36,6 +41,9 @@ export default function Home() {
           </div>
         </div>
       </header>
+
+      <GalleryComp />
+      <AboutPage />
     </div>
   );
 }
