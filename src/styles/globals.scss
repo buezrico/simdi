@@ -17,9 +17,6 @@ a {
   font-family: "Bodoni Moda", sans-serif;
   box-sizing: border-box;
   color: $light;
-  p {
-    margin: 0;
-  }
 }
 
 .styled-text {
@@ -39,11 +36,16 @@ header {
   background: url("../../public/images/bg2.webp");
   background-size: cover;
   background-position: center;
-  height: 100vh;
   background-attachment: fixed;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  .navbar {
+    position: fixed;
+    z-index: 10;
+  }
 
   @media screen and (max-width: 768px) {
     background: url("../../public/images/mobile-bg.webp");
@@ -56,16 +58,78 @@ header {
     // background: rgba(0, 0, 0, 0.8);
     background: linear-gradient($dark, $secondary);
     width: 100%;
-
+    position: relative;
+    // position: static;
     box-shadow: 1rem;
+
+    .menu {
+      position: fixed;
+      display: block;
+      height: 70%;
+      width: 100%;
+      transition: 0.7s ease-in-out;
+      // padding: 5rem;
+      top: -100%;
+      left: 0;
+
+      .menu-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        .menu-items {
+          height: 100%;
+          position: relative;
+          width: 80%;
+
+          .navitem {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem;
+            // background: red;
+            border-radius: 50%;
+            .nav-link {
+              cursor: pointer;
+            }
+          }
+          .gallery-link {
+            left: 20%;
+            top: 5%;
+          }
+          .about-link {
+            left: 50%;
+            top: 25%;
+          }
+          .contact-link {
+            left: 25%;
+            top: 45%;
+          }
+          .close {
+            top: 65%;
+            left: 25%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    // .menu {
+    //   position: fixed;
+    //   display: block;
+    //   width: 100%;
+    //   background: green;
+    //   height: 50vh;
+    //   top: -100%;
+    // }
 
     .social-icons {
       align-items: center;
       i {
         color: $primary;
         margin-right: 1rem;
+        cursor: pointer;
         @media screen and (min-width: 768px) {
-          margin-right: 2rem;
+          // margin-right: 2rem;
         }
       }
     }
