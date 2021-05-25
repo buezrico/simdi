@@ -3,6 +3,7 @@ import React from "react";
 import NavbarComp from "../components/NavbarComp";
 import AboutPage from "../components/AboutComp";
 import GalleryComp from "../components/GalleryComp";
+import FooterComp from "../components/FooterComp";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
 
       <GalleryComp />
       <AboutPage />
+      <FooterComp />
     </div>
   );
 }
