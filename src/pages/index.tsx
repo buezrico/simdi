@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>I am Simdi</title>
+        <title>Simdi</title>
         <meta name="description" content="I am Simdi and I am a Model" />
         <link rel="icon" href="/images/logo.ico" />
       </Head>

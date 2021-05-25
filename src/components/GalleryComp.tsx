@@ -1,14 +1,5 @@
-// import React, {}
-
-// const GalleryComp = () => {
-//   return <div></div>;
-// };
-
-// export default GalleryComp;
-
 import React, { Component } from "react";
 import Slider from "react-slick";
-// import { baseUrl } from "./config";
 
 export default class GalleryComp extends Component {
   render() {

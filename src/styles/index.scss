@@ -22,24 +22,36 @@
       //   text-orientation: upright;
     }
     .slick-slider {
-      border-left: 2px solid $light;
-      border-right: 2px solid $light;
       padding: 0.5rem;
       // background: gray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
 
-      .slick-arrow,
+      //   .slick-arrow,
       .slick-next,
       .slick-prev {
+        z-index: 1;
+        position: absolute;
+        width: unset;
+        top: 30%;
+        padding: 5rem;
         @media screen and (max-width: 568px) {
           display: none !important;
         }
       }
 
+      .slick-prev::before,
+      .slick-next::before {
+        color: $primary;
+        font-size: 3rem;
+      }
+
       // height: 100%;
       .slick-list {
+        border-right: 2px solid $light;
+        border-left: 2px solid $light;
         // background: pink;
         //   height: 100%;
         //   background: green;
