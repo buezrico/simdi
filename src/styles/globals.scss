@@ -62,6 +62,7 @@ header {
   nav {
     // background: rgba(0, 0, 0, 0.8);
     background: linear-gradient($dark, $secondary);
+    box-shadow: 0.2rem 0.2rem 0.3rem whitesmoke;
     width: 100%;
     position: relative;
     // position: static;
@@ -94,6 +95,7 @@ header {
             border-radius: 50%;
             .nav-link {
               cursor: pointer;
+              text-align: center;
             }
           }
           .home-link {
@@ -151,13 +153,12 @@ header {
   }
   .content {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
-    flex: 1;
+    height: 90%;
+    // flex: 1;
 
-    // background: red;
     .inner {
-      // background: yellow;
       display: flex;
       flex-direction: column;
       justify-content: center;
