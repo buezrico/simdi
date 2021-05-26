@@ -22,6 +22,9 @@ const NavbarComp = () => {
         <div className="menu" style={{ top: nav ? 50 : "" }}>
           <div className="container menu-wrapper">
             <div className="menu-items">
+              <div className="navitem home-link">
+                <a className="nav-link">Home</a>
+              </div>
               <div className="navitem gallery-link">
                 <a className="nav-link">Gallery</a>
               </div>
