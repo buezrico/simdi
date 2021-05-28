@@ -4,19 +4,6 @@ import { gsap } from "gsap";
 const NavbarComp = () => {
   const [nav, setNav] = useState(false);
 
-  // useEffect(() => {
-  //   let tween = gsap.to(".menu", { duration: 5, ease: "elastic", top: "50%" });
-  //   tween.play();
-  // }, []);
-
-  // const tween = gsap.to(".menu", {
-  //   duration: 1.5,
-  //   ease: "elastic.out(1, 0.3)",
-  //   top: -90,
-  //   opacity: 0,
-  //   delay: 1,
-  // });
-
   return (
     <nav className="navbar text-primary">
       <div className="container">
@@ -27,14 +14,14 @@ const NavbarComp = () => {
         </div>
 
         <button className="btn rounded-circle btn-outline-primary py-1">
-          <i className="fas fa-bars" id="menu" onClick={() => tween}></i>
+          <i className="fas fa-bars" id="menu" onClick={() => setNav(!nav)}></i>
         </button>
 
         <button className="btn rounded-0 btn-outline-primary px-md-4">
           Book Me
         </button>
 
-        <div className="menu" style={{}}>
+        <div className="menu" style={{ top: nav ? "10%" : "" }}>
           <div className="container menu-wrapper">
             <div className="menu-items">
               <div className="navitem home-link">

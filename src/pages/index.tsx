@@ -1,13 +1,24 @@
 import Head from "next/head";
 import React, { Component } from "react";
-import { TimelineLite, Bounce } from "gsap";
+import { gsap, TimelineLite, Bounce } from "gsap";
+import { TextPlugin } from "gsap/dist/TextPlugin";
 import NavbarComp from "../components/NavbarComp";
 import AboutPage from "../components/AboutComp";
 import GalleryComp from "../components/GalleryComp";
 import FooterComp from "../components/FooterComp";
 
+gsap.registerPlugin(TextPlugin);
+
 class Simdi extends Component {
   componentDidMount() {
+    gsap.to(".header-title", {
+      duration: 5,
+      text: "Nigerian Supermodel & Enterpreneur",
+      ease: "none",
+      delimiter: "",
+      delay: 2,
+    });
+
     const tl = new TimelineLite();
     tl.from(
       ".joy",
@@ -48,9 +59,9 @@ class Simdi extends Component {
               </div>
 
               <div className="title text-center text-light mb-3">
-                <h4>Nigerian Supermodel &amp; Enterpreneur</h4>
+                <h4 className="header-title"></h4>
               </div>
-              <div className="arrow-down">
+              <div className="arrow-down" onClick={() => tween.play()}>
                 <svg
                   width="24"
                   height="24"

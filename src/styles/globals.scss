@@ -65,7 +65,6 @@ header {
     box-shadow: 0.2rem 0.2rem 0.3rem whitesmoke;
     width: 100%;
     position: relative;
-    // position: static;
     box-shadow: 1rem;
 
     .menu {
@@ -75,7 +74,7 @@ header {
       width: 100%;
       transition: 0.7s ease-in-out;
       // padding: 5rem;
-      top: 0;
+      top: -100%;
       left: 0;
 
       .menu-wrapper {
