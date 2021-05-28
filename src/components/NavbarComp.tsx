@@ -4,13 +4,18 @@ import { gsap } from "gsap";
 const NavbarComp = () => {
   const [nav, setNav] = useState(false);
 
-  const tween = gsap.from(".menu", {
-    duration: 1.5,
-    ease: "elastic.out(1, 0.3)",
-    top: -90,
-    opacity: 0,
-    delay: 1,
-  });
+  // useEffect(() => {
+  //   let tween = gsap.to(".menu", { duration: 5, ease: "elastic", top: "50%" });
+  //   tween.play();
+  // }, []);
+
+  // const tween = gsap.to(".menu", {
+  //   duration: 1.5,
+  //   ease: "elastic.out(1, 0.3)",
+  //   top: -90,
+  //   opacity: 0,
+  //   delay: 1,
+  // });
 
   return (
     <nav className="navbar text-primary">
@@ -22,7 +27,7 @@ const NavbarComp = () => {
         </div>
 
         <button className="btn rounded-circle btn-outline-primary py-1">
-          <i className="fas fa-bars"></i>
+          <i className="fas fa-bars" id="menu" onClick={() => tween}></i>
         </button>
 
         <button className="btn rounded-0 btn-outline-primary px-md-4">

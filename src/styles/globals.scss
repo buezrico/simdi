@@ -71,11 +71,11 @@ header {
     .menu {
       position: fixed;
       display: block;
-      height: 70%;
+      height: 100%;
       width: 100%;
       transition: 0.7s ease-in-out;
       // padding: 5rem;
-      top: -100%;
+      top: 0;
       left: 0;
 
       .menu-wrapper {
