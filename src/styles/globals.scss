@@ -44,12 +44,21 @@ header {
   justify-content: space-between;
   position: relative;
 
-  ::before {
-    background-attachment: fixed;
-  }
+  // ::before {
+  //   background-attachment: fixed;
+  // }
   .navbar {
     position: fixed;
     z-index: 10;
+    .inner {
+      .boke-me {
+        .ant-anchor-link-title {
+          &:hover {
+            color: $dark;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -95,6 +104,7 @@ header {
             .nav-link {
               cursor: pointer;
               text-align: center;
+              text-decoration: none !important;
             }
           }
           .home-link {

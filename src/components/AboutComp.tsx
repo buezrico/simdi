@@ -1,11 +1,9 @@
-import Head from "next/head";
 import React from "react";
-import NavbarComp from "./NavbarComp";
 
 const AboutComp = () => {
   return (
     <div>
-      <main className="about">
+      <main className="about" id="about">
         <div className="inner">
           <div className="container">
             <div className="about-text">

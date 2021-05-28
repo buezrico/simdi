@@ -48,7 +48,7 @@ class Simdi extends Component {
           <link rel="icon" href="/images/logo.ico" />
         </Head>
 
-        <header>
+        <header id="home">
           <NavbarComp />
 
           <div className="content">
@@ -61,7 +61,7 @@ class Simdi extends Component {
               <div className="title text-center text-light mb-3">
                 <h4 className="header-title"></h4>
               </div>
-              <div className="arrow-down" onClick={() => tween.play()}>
+              <div className="arrow-down">
                 <svg
                   width="24"
                   height="24"

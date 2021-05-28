@@ -19,7 +19,7 @@ export default class GalleryComp extends Component {
       slidesToScroll: 1,
     };
     return (
-      <div className="gallery">
+      <div className="gallery" id="gallery">
         {/* <h2>Custom Paging</h2> */}
         <div className="container inner">
           <div className="title ">

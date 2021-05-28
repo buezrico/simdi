@@ -1,6 +1,6 @@
 const FooterComp = () => {
   return (
-    <footer>
+    <footer id="contact">
       <div className="container inner">
         <div className="wrapper">
           <div className="left">

@@ -107,3 +107,19 @@
     }
   }
 }
+
+.ant-anchor-link-title {
+  text-decoration: none;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.book-me {
+  color: red !important;
+  .ant-anchor-link-title {
+    &:hover {
+      color: $dark !important;
+    }
+  }
+}
