@@ -20,12 +20,11 @@ export default class GalleryComp extends Component {
     };
     return (
       <div className="gallery" id="gallery">
-        {/* <h2>Custom Paging</h2> */}
         <div className="container inner">
           <div className="title ">
             <p className="text-dark styled-text">Gallery</p>
           </div>
-          <Slider {...settings}>
+          {/* <Slider {...settings}>
             <div>
               <img src="/images/img1.jpg" />
             </div>
@@ -176,7 +175,7 @@ export default class GalleryComp extends Component {
             <div>
               <img src="/images/img50.jpg" />
             </div>
-          </Slider>
+          </Slider> */}
         </div>
       </div>
     );

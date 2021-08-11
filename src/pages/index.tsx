@@ -77,8 +77,8 @@ class Simdi extends Component {
           </div>
         </header>
 
-        <GalleryComp />
         <AboutPage />
+        <GalleryComp />
         <FooterComp />
       </div>
     );
