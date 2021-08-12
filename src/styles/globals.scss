@@ -51,9 +51,13 @@ header {
     position: fixed;
     z-index: 10;
     .inner {
-      .boke-me {
-        .ant-anchor-link-title {
-          &:hover {
+      .book-me {
+        background: transparent;
+        border: 2px solid $primary;
+
+        &:hover {
+          background: $primary;
+          .ant-anchor-link-title {
             color: $dark;
           }
         }
@@ -99,7 +103,7 @@ header {
             position: absolute;
             background: rgba(0, 0, 0, 0.7);
             padding: 0.5rem;
-            // background: red;
+            display: flex;
             border-radius: 50%;
             .nav-link {
               cursor: pointer;

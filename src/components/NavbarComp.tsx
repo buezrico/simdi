@@ -15,11 +15,14 @@ const NavbarComp = () => {
           <i className="fab fa-twitter"></i>
         </div>
 
-        <button className="btn rounded-circle btn-outline-primary py-1">
-          <i className="fas fa-bars" id="menu" onClick={() => setNav(!nav)}></i>
+        <button
+          className="btn rounded-circle btn-outline-primary py-1"
+          onClick={() => setNav(!nav)}
+        >
+          <i className="fas fa-bars" id="menu"></i>
         </button>
 
-        <button className="btn rounded-0 btn-outline-primary boke-me px-md-4">
+        <button className="btn rounded-0  book-me px-md-4">
           <Anchor affix={false} showInkInFixed={false}>
             <Link href="#contact" title="Book Me" />
           </Anchor>
@@ -68,13 +71,17 @@ const NavbarComp = () => {
                     affix={false}
                     showInkInFixed={false}
                   >
-                    <Link href="#contact" title="Get In Touch" />
+                    <Link
+                      href="#contact"
+                      title="Get In Touch"
+                      className="navLink"
+                    />
                   </Anchor>
                 </a>
               </div>
-              <div className="close navitem d-flex">
+              <div className="close navitem" onClick={() => setNav(!nav)}>
                 <button className="btn rounded-circle btn-primary text-light px-3 py-1">
-                  <i className="fas fa-times" onClick={() => setNav(!nav)}></i>
+                  <i className="fas fa-times"></i>
                 </button>
               </div>
             </div>
