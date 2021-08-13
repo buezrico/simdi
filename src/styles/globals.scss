@@ -223,7 +223,7 @@ header {
 }
 
 .about {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   background: rgba(10, 10, 10, 0.2);
@@ -300,6 +300,10 @@ header {
         flex-direction: column;
         justify-content: space-between;
 
+        @media screen and (min-width: 550px) {
+          min-height: 30em;
+        }
+
         .image {
           overflow: hidden;
           border-radius: 1rem;
@@ -313,12 +317,9 @@ header {
             max-width: 6em;
             border-radius: 1em;
 
-            // @media screen and (min-width: 550px) {
-            //   max-width: 7em;
-            // }
-            // @media screen and (min-width: 900px) {
-            //   max-width: 10em;
-            // }
+            @media screen and (min-width: 550px) {
+              max-width: 7em;
+            }
           }
         }
       }
