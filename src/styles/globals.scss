@@ -271,6 +271,20 @@ header {
     }
   }
 }
+
+.gallery {
+  .inner {
+    .images {
+      .image {
+        img {
+          max-width: 18em;
+          border-radius: 1em;
+        }
+      }
+    }
+  }
+}
+
 footer {
   // height: 50vh;
   background: linear-gradient($dark, $secondary, $dark);
