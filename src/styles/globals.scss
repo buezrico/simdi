@@ -51,6 +51,16 @@ header {
     position: fixed;
     z-index: 10;
     .inner {
+      .menubtn {
+        border: 0.18em solid $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 1.5em;
+        }
+      }
       .book-me {
         background: transparent;
         border: 2px solid $primary;
@@ -101,10 +111,10 @@ header {
 
           .navitem {
             position: absolute;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 0.5rem;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 0.2rem;
             display: flex;
-            border-radius: 50%;
+            border-radius: 10%;
             .nav-link {
               cursor: pointer;
               text-align: center;
@@ -132,6 +142,10 @@ header {
             top: 65%;
             display: flex;
             justify-content: center;
+
+            i {
+              font-size: 1.5em;
+            }
           }
         }
       }

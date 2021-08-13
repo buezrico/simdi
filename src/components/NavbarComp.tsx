@@ -16,7 +16,7 @@ const NavbarComp = () => {
         </div>
 
         <button
-          className="btn rounded-circle btn-outline-primary py-1"
+          className="btn rounded btn-outline-primary py-1 menubtn"
           onClick={() => setNav(!nav)}
         >
           <i className="fas fa-bars" id="menu"></i>
@@ -80,7 +80,7 @@ const NavbarComp = () => {
                 </a>
               </div>
               <div className="close navitem" onClick={() => setNav(!nav)}>
-                <button className="btn rounded-circle btn-primary text-light px-3 py-1">
+                <button className="btn btn-primary text-light px-3 py-1">
                   <i className="fas fa-times"></i>
                 </button>
               </div>
