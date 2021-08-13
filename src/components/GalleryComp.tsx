@@ -26,38 +26,48 @@ export default class GalleryComp extends Component {
           </div>
 
           <div className="images">
-            <div className="image">
-              <img src="images/img10.jpg" alt="" />
+            <div className="image-set">
+              <div className="image">
+                <img src="images/img43.jpg" alt="" />
+              </div>
+
+              <div className="image">
+                <img src="images/img48.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img1.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img24.jpg" alt="" />
+              </div>
             </div>
-            <div className="image">
-              <img src="images/img43.jpg" alt="" />
+
+            <div className="image-set">
+              <div className="image">
+                <img src="images/img2.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img45.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img39.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img36.jpg" alt="" />
+              </div>
             </div>
-            <div className="image">
-              <img src="images/img29.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img2.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img36.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img45.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img48.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img24.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img31.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img39.jpg" alt="" />
-            </div>
-            <div className="image">
-              <img src="images/img1.jpg" alt="" />
+
+            <div className="image-set">
+              <div className="image">
+                <img src="images/img29.jpg" alt="" />
+              </div>
+              <div className="image">
+                <img src="images/img10.jpg" alt="" />
+              </div>
+
+              <div className="image">
+                <img src="images/img31.jpg" alt="" />
+              </div>
             </div>
           </div>
 
