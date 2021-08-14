@@ -28,45 +28,45 @@ export default class GalleryComp extends Component {
           <div className="images">
             <div className="image-set">
               <div className="image">
-                <img src="images/img43.jpg" alt="" />
+                <img src="images/img43.jpg" alt="" loading="lazy" />
               </div>
 
               <div className="image">
-                <img src="images/img48.jpg" alt="" />
+                <img src="images/img48.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img1.jpg" alt="" />
+                <img src="images/img1.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img24.jpg" alt="" />
+                <img src="images/img24.jpg" alt="" loading="lazy" />
               </div>
             </div>
 
             <div className="image-set">
               <div className="image">
-                <img src="images/img2.jpg" alt="" />
+                <img src="images/img2.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img45.jpg" alt="" />
+                <img src="images/img45.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img39.jpg" alt="" />
+                <img src="images/img39.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img36.jpg" alt="" />
+                <img src="images/img36.jpg" alt="" loading="lazy" />
               </div>
             </div>
 
             <div className="image-set">
               <div className="image">
-                <img src="images/img29.jpg" alt="" />
+                <img src="images/img29.jpg" alt="" loading="lazy" />
               </div>
               <div className="image">
-                <img src="images/img10.jpg" alt="" />
+                <img src="images/img10.jpg" alt="" loading="lazy" />
               </div>
 
               <div className="image">
-                <img src="images/img31.jpg" alt="" />
+                <img src="images/img31.jpg" alt="" loading="lazy" />
               </div>
             </div>
           </div>
