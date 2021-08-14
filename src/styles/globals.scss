@@ -291,6 +291,7 @@ header {
   display: flex;
   align-items: center;
   background: linear-gradient($dark, $secondary, $dark);
+  position: relative;
   // padding: 1em;
   .inner {
     .title {
@@ -317,6 +318,17 @@ header {
         @media screen and (min-width: 550px) {
           min-height: 30em;
         }
+        // .test {
+        //   position: absolute;
+        //   left: 20%;
+        //   top: 20%;
+        //   z-index: 2;
+
+        //   img {
+        //     max-width: 15em !important;
+        //     // height: auto;
+        //   }
+        // }
 
         .image {
           overflow: hidden;
@@ -326,6 +338,16 @@ header {
           background: linear-gradient(transparent, #0005);
           -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
           padding: 0.2rem;
+          // &:hover {
+          //   position: fixed;
+          //   top: 20%;
+          //   left: 50%;
+          //   z-index: 2;
+
+          //   img {
+          //     max-width: 15em;
+          //   }
+          // }
 
           img {
             max-width: 5em;
