@@ -51,6 +51,13 @@ header {
     position: fixed;
     z-index: 10;
     .inner {
+      .social-icons {
+        i {
+          border: 0.18em solid $primary;
+          padding: 0.2em;
+          border-radius: 50%;
+        }
+      }
       .menubtn {
         border: 0.18em solid $primary;
         display: flex;
