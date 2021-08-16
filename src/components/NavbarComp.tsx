@@ -8,10 +8,10 @@ const NavbarComp = () => {
     <nav className="navbar text-primary">
       <div className="container inner">
         <div className="social-icons">
+          <i className="fab fa-facebook"></i>
           <a href="https://www.instagram.com/simdi_j/">
             <i className="fab fa-instagram"></i>
           </a>
-          <i className="fab fa-facebook-f"></i>
           <i className="fab fa-twitter"></i>
         </div>
 
