@@ -1,77 +1,76 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
-export default class GalleryComp extends Component {
-  render() {
-    const settings = {
-      customPaging: function (i) {
-        return (
-          <a>
-            <img src={`/images/img${i + 1}.jpg`} />
-          </a>
-        );
-      },
-      dots: true,
-      dotsClass: "slick-dots slick-thumb",
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-    return (
-      <div className="gallery" id="gallery">
-        <div className="container inner">
-          <div className="title ">
-            <p className="text-dark styled-text">Gallery</p>
-          </div>
+const GalleryComp = () => {
+  // render() {
+  // const settings = {
+  //   customPaging: function (i) {
+  //     return (
+  //       <a>
+  //         <img src={`/images/img${i + 1}.jpg`} />
+  //       </a>
+  //     );
+  //   },
+  //   dots: true,
+  //   dotsClass: "slick-dots slick-thumb",
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
+  return (
+    <div className="gallery" id="gallery">
+      <div className="container inner">
+        <div className="title ">
+          <p className="text-dark styled-text">Gallery</p>
+        </div>
 
-          <div className="images">
-            <div className="image-set">
-              <div className="image">
-                <img src="images/img43.jpg" alt="" loading="lazy" />
-              </div>
-
-              <div className="image">
-                <img src="images/img48.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img1.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img24.jpg" alt="" loading="lazy" />
-              </div>
+        <div className="images">
+          <div className="image-set">
+            <div className="image">
+              <img src="images/img43.jpg" alt="" loading="lazy" />
             </div>
 
-            <div className="image-set">
-              <div className="image">
-                <img src="images/img2.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img45.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img39.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img36.jpg" alt="" loading="lazy" />
-              </div>
+            <div className="image">
+              <img src="images/img48.jpg" alt="" loading="lazy" />
             </div>
-
-            <div className="image-set">
-              <div className="image">
-                <img src="images/img29.jpg" alt="" loading="lazy" />
-              </div>
-              <div className="image">
-                <img src="images/img10.jpg" alt="" loading="lazy" />
-              </div>
-
-              <div className="image">
-                <img src="images/img31.jpg" alt="" loading="lazy" />
-              </div>
+            <div className="image">
+              <img src="images/img1.jpg" alt="" loading="lazy" />
+            </div>
+            <div className="image">
+              <img src="images/img24.jpg" alt="" loading="lazy" />
             </div>
           </div>
 
-          {/* <Slider {...settings}>
+          <div className="image-set">
+            <div className="image">
+              <img src="images/img2.jpg" alt="" loading="lazy" />
+            </div>
+            <div className="image">
+              <img src="images/img45.jpg" alt="" loading="lazy" />
+            </div>
+            <div className="image">
+              <img src="images/img39.jpg" alt="" loading="lazy" />
+            </div>
+            <div className="image">
+              <img src="images/img36.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+
+          <div className="image-set">
+            <div className="image">
+              <img src="images/img29.jpg" alt="" loading="lazy" />
+            </div>
+            <div className="image">
+              <img src="images/img10.jpg" alt="" loading="lazy" />
+            </div>
+
+            <div className="image">
+              <img src="images/img31.jpg" alt="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        {/* <Slider {...settings}>
             <div>
               <img src="/images/img1.jpg" />
             </div>
@@ -223,8 +222,9 @@ export default class GalleryComp extends Component {
               <img src="/images/img50.jpg" />
             </div>
           </Slider> */}
-        </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default GalleryComp;
