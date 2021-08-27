@@ -1,4 +1,5 @@
 // import Slider from "react-slick";
+import ModalImage from "react-modal-image";
 
 const GalleryComp = () => {
   // render() {
