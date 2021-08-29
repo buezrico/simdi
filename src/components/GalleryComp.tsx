@@ -1,7 +1,8 @@
 // import Slider from "react-slick";
-import ModalImage from "react-modal-image";
+import { useState } from "react";
 
 const GalleryComp = () => {
+  const [full, setFull] = useState(false);
   // render() {
   // const settings = {
   //   customPaging: function (i) {
@@ -27,8 +28,13 @@ const GalleryComp = () => {
 
         <div className="images">
           <div className="image-set">
-            <div className="image">
-              <img src="images/img43.jpg" alt="" loading="lazy" />
+            <div className={`image ${full ? "clicked" : ""}`}>
+              <img
+                src="images/img43.jpg"
+                alt=""
+                loading="lazy"
+                onClick={() => setFull(!full)}
+              />
             </div>
 
             <div className="image">
@@ -49,8 +55,13 @@ const GalleryComp = () => {
             <div className="image">
               <img src="images/img45.jpg" alt="" loading="lazy" />
             </div>
-            <div className="image">
-              <img src="images/img39.jpg" alt="" loading="lazy" />
+            <div className={`image ${full ? "clicked" : ""}`}>
+              <img
+                src="images/img39.jpg"
+                alt=""
+                loading="lazy"
+                onClick={() => setFull(!full)}
+              />
             </div>
             <div className="image">
               <img src="images/img36.jpg" alt="" loading="lazy" />
