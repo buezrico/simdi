@@ -57,7 +57,7 @@ header {
           border: 0.18em solid $primary;
           color: $primary;
           padding: 0.3em;
-          border-radius: 50%;
+          border-radius: 20%;
           margin-right: 0.5em;
           display: flex;
           cursor: pointer;
@@ -86,6 +86,7 @@ header {
       .book-me {
         background: transparent;
         border: 2px solid $primary;
+        padding: 0.2em 0.4em;
 
         &:hover {
           background: $primary;
@@ -174,15 +175,6 @@ header {
         }
       }
     }
-
-    // .menu {
-    //   position: fixed;
-    //   display: block;
-    //   width: 100%;
-    //   background: green;
-    //   height: 50vh;
-    //   top: -100%;
-    // }
 
     .btn {
       i {
@@ -299,12 +291,10 @@ header {
 }
 
 .gallery {
-  // height: 90vh;
   display: flex;
   align-items: center;
   background: linear-gradient($dark, $secondary, $dark);
   position: relative;
-  // padding: 1em;
   .inner {
     .title {
       text-align: right;
@@ -330,17 +320,6 @@ header {
         @media screen and (min-width: 550px) {
           min-height: 30em;
         }
-        // .test {
-        //   position: absolute;
-        //   left: 20%;
-        //   top: 20%;
-        //   z-index: 2;
-
-        //   img {
-        //     max-width: 15em !important;
-        //     // height: auto;
-        //   }
-        // }
 
         .image {
           overflow: hidden;
