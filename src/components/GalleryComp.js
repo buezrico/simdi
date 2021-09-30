@@ -1,7 +1,8 @@
 // import Slider from "react-slick";
-import ModalImage from "react-modal-image";
+import { useState } from "react";
 
 const GalleryComp = () => {
+  // const [full, setFull] = useState(false);
   // render() {
   // const settings = {
   //   customPaging: function (i) {
@@ -27,46 +28,58 @@ const GalleryComp = () => {
 
         <div className="images">
           <div className="image-set">
+            {/* <div className={`image ${full ? "clicked" : ""}`}> */}
             <div className="image">
-              <img src="images/img43.jpg" alt="" loading="lazy" />
+              <img
+                src="images/img43.webp"
+                alt=""
+                loading="lazy"
+                // onClick={() => setFull(!full)}
+              />
             </div>
 
             <div className="image">
-              <img src="images/img48.jpg" alt="" loading="lazy" />
+              <img src="images/img48.webp" alt="" loading="lazy" />
             </div>
             <div className="image">
-              <img src="images/img1.jpg" alt="" loading="lazy" />
+              <img src="images/img1.webp" alt="" loading="lazy" />
             </div>
             <div className="image">
-              <img src="images/img24.jpg" alt="" loading="lazy" />
+              <img src="images/img24.webp" alt="" loading="lazy" />
             </div>
           </div>
 
           <div className="image-set">
             <div className="image">
-              <img src="images/img2.jpg" alt="" loading="lazy" />
+              <img src="images/img2.webp" alt="" loading="lazy" />
             </div>
             <div className="image">
-              <img src="images/img45.jpg" alt="" loading="lazy" />
+              <img src="images/img45.webp" alt="" loading="lazy" />
+            </div>
+            {/* <div className={`image ${full ? "clicked" : ""}`}> */}
+            <div className="image">
+              <img
+                src="images/img39.webp"
+                alt=""
+                loading="lazy"
+                // onClick={() => setFull(!full)}
+              />
             </div>
             <div className="image">
-              <img src="images/img39.jpg" alt="" loading="lazy" />
-            </div>
-            <div className="image">
-              <img src="images/img36.jpg" alt="" loading="lazy" />
+              <img src="images/img36.webp" alt="" loading="lazy" />
             </div>
           </div>
 
           <div className="image-set">
             <div className="image">
-              <img src="images/img29.jpg" alt="" loading="lazy" />
+              <img src="images/img29.webp" alt="" loading="lazy" />
             </div>
             <div className="image">
-              <img src="images/img10.jpg" alt="" loading="lazy" />
+              <img src="images/img10.webp" alt="" loading="lazy" />
             </div>
 
             <div className="image">
-              <img src="images/img31.jpg" alt="" loading="lazy" />
+              <img src="images/img31.webp" alt="" loading="lazy" />
             </div>
           </div>
         </div>

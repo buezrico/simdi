@@ -22,7 +22,7 @@ const NavbarComp = () => {
           <i className="fas fa-bars" id="menu"></i>
         </button>
 
-        <button className="btn rounded-0  book-me px-md-4">
+        <button className="btn rounded  book-me">
           <Anchor affix={false} showInkInFixed={false}>
             <Link href="#contact" title="Book Me" />
           </Anchor>

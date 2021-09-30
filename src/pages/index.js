@@ -5,6 +5,7 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 import NavbarComp from "../components/NavbarComp";
 import AboutPage from "../components/AboutComp";
 import GalleryComp from "../components/GalleryComp";
+import GalleryCompNew from "../components/GalleryCompNew";
 import FooterComp from "../components/FooterComp";
 
 gsap.registerPlugin(TextPlugin);
@@ -79,6 +80,7 @@ class Simdi extends Component {
 
         <AboutPage />
         <GalleryComp />
+        {/* <GalleryCompNew /> */}
         <FooterComp />
       </div>
     );
