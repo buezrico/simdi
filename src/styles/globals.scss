@@ -2,11 +2,8 @@
 
 html,
 body {
-  // -webkit-transform: translate3d(0, 0, 0);
   padding: 0;
   margin: 0;
-  // font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
-  //   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -37,16 +34,12 @@ header {
   background: url("../../public/images/bg2.webp");
   background-size: cover;
   background-position: center;
-  // background-attachment: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
 
-  // ::before {
-  //   background-attachment: fixed;
-  // }
   .navbar {
     position: fixed;
     z-index: 9;
@@ -104,11 +97,8 @@ header {
     background: url("../../public/images/mobile-bg.webp");
     background-position: center;
     background-size: cover;
-    // background-attachment: fixed;
-    // background: red;
   }
   nav {
-    // background: rgba(0, 0, 0, 0.8);
     background: linear-gradient($dark, $secondary);
     box-shadow: 0.2rem 0.2rem 0.3rem whitesmoke;
     width: 100%;
@@ -121,7 +111,6 @@ header {
       height: 100%;
       width: 100%;
       transition: 0.7s ease-in-out;
-      // padding: 5rem;
       top: -100%;
       left: 0;
 
@@ -187,20 +176,16 @@ header {
     align-items: flex-end;
     position: relative;
     height: 90%;
-    // flex: 1;
 
     .inner {
       display: flex;
       flex-direction: column;
       justify-content: center;
       .name {
-        // background: green;
         display: flex;
         justify-content: space-between;
 
         p {
-          // height: 100vh;
-
           text-align: center;
           margin: 0;
           writing-mode: vertical-lr;
@@ -220,12 +205,9 @@ header {
       }
       .title {
         background: rgba(0, 0, 0, 0.5);
-        // padding: 0;
         h4 {
-          // width: 100%;
           font-size: 1.5rem;
           letter-spacing: 0.2rem;
-          // font-weight: bold;
           @media screen and (max-width: 768px) {
             letter-spacing: 0.1rem;
             font-size: 1.2rem;
@@ -246,16 +228,13 @@ header {
   align-items: center;
   background: rgba(10, 10, 10, 0.2);
   box-shadow: 20rem;
-  // padding: 2rem 0;
 
   .inner {
     height: 100%;
     width: 100%;
-    // background: yellow;
     background: url("../../public/images/bg1.webp");
     background-size: cover;
     background-position: center;
-    // background-attachment: fixed;
     background-repeat: no-repeat;
     padding-top: 3rem;
 
@@ -303,8 +282,6 @@ header {
       p {
         font-size: 2rem;
       }
-      //   writing-mode: vertical-lr;
-      //   text-orientation: upright;
     }
     .images {
       display: grid;
@@ -351,7 +328,6 @@ header {
           img {
             max-width: 50vw;
             max-height: 70vh;
-            // max-width: 1em;
           }
         }
       }
@@ -360,14 +336,12 @@ header {
 }
 
 footer {
-  // height: 50vh;
   background: linear-gradient($dark, $secondary, $dark);
   padding-top: 3rem;
   .inner {
     .wrapper {
       width: 100%;
       @media screen and (min-width: 768px) {
-        // background: red;
         display: flex;
         justify-content: space-between;
       }
